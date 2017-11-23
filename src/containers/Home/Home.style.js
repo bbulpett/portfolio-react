@@ -6,7 +6,7 @@ width: 50%;
 
 export const HeroImage = styled.div`
   color: #FFF;
-  height: 100vh;
+  height: 65vh;
   background-image: url('${require('../../assets/miitomo.jpg')}');
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,4 +18,13 @@ export const HeroImage = styled.div`
   justify-content: center;
 
   text-align: right;
+  font-size: 1.25em;
+
+  h1 {
+    margin: 100px 15px 0 0;
+  }
+
+  h2 {
+    margin: 0 15px 0 0;
+  }
 `;
