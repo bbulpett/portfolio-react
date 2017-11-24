@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Image = styled.img`
 width: 50%;
@@ -6,11 +6,12 @@ width: 50%;
 
 export const HeroImage = styled.div`
   color: #FFF;
-  height: 65vh;
+  height: 90vh;
   background-image: url('${require('../../assets/miitomo.jpg')}');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 10vh;
 
   display: flex;
   flex-direction: column;
@@ -27,4 +28,27 @@ export const HeroImage = styled.div`
   h2 {
     margin: 0 15px 0 0;
   }
+`;
+
+export const RevealP = styled.p`
+  position: relative;
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+
+    transform-origin: left;
+    transform: rotateY(90deg);
+    transition: transform 1s;
+  }
+
+  ${({ hide }) => hide && css`
+    &:after {
+      transform: rotateY(0deg);
+    }
+  `}
 `;

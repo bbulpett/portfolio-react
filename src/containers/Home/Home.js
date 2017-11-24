@@ -2,10 +2,14 @@ import React, { Component, PropTypes } from 'react';
 import { Container } from '../../theme/grid';
 import { 
   Image,
-  HeroImage
+  HeroImage,
+  RevealP
 } from './Home.style';
+import WhenInView from '../../components/WhenInView/WhenInView';
 
 export default class Home extends Component {
+  static PropTypes = {};
+
   render() {
     return (
       <Container className="App">
@@ -15,9 +19,20 @@ export default class Home extends Component {
         </HeroImage>
         {/* TODO: Add an actual photo, perhaps a cinemagraph GIF */}
         {/* <Image src={require('../assets/miitomo.jpg')} alt="miitomo-image"/> */}
-        <p>
-        Frosty Christmas Christmas elves jingle bells celebrate bells ornament holly. Wreath gift holiday chimney give reindeer nutcracker elves, chestnuts ornament candy cane calendar reindeer singing. Love ivy noel elves cookie, chestnuts chestnuts gold tree holiday ivy toys. Candy cane noel goodwill chimney goodwill ivy, candy cane stocking carols love ornament toys goodwill icicle. Noel gift give santa, give singing guest partridge calendar partridge bells.
-        </p>
+        <WhenInView>
+          {({ isInView }) =>
+            <RevealP hide={!isInView}>
+            Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+            </RevealP>
+          }
+        </WhenInView>
+        <WhenInView>
+          {({ isInView }) =>
+            <RevealP hide={!isInView}>
+            Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+            </RevealP>
+          }
+        </WhenInView>
       </Container>
     );
   }
