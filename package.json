@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "create-react-class": "^15.6.2",
+    "prop-types": "^15.6.0",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-hot-loader": "^3.0.0",
+    "react-motion": "^0.5.2",
     "react-router": "3.x",
     "react-scripts": "1.0.17",
     "react-waypoint": "^7.3.4",
+    "react-zoomy": "https://github.com/bbulpett/react-zoomy.git",
     "styled-components": "^2.2.3"
   },
   "scripts": {
@@ -16,5 +20,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "devDependencies": {}
 }

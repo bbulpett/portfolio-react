@@ -1,14 +1,12 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { Container } from '../../theme/grid';
 import { 
-  Image,
   HeroImage,
   RevealP
 } from './Home.style';
 import WhenInView from '../../components/WhenInView/WhenInView';
 
 export default class Home extends Component {
-  static PropTypes = {};
 
   render() {
     return (
