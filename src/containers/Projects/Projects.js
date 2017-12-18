@@ -10,6 +10,8 @@ class Projects extends Component {
   render() {
     return (
       <div>
+        <h1>Projects page</h1>
+        <p><small>(More at <a href='https://github.com/bbulpett'>github.com/bbulpett</a>)</small></p>
         {<Zoomy
           imageUrl={require('../../assets/office-photo.jpg')}
           renderThumbnail={({ showImage }) => 
@@ -25,7 +27,6 @@ class Projects extends Component {
             }
           }}
         />}
-        <h1>Projects page</h1>
       </div>
     );
   }
