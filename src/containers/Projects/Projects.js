@@ -1,33 +1,42 @@
 import React, { Component } from 'react';
 import Zoomy from 'react-zoomy';
 import {
-  ImageButton
+  ImageButton,
+  Index
 } from './Projects.style';
-import { Containter } from '../../theme/grid';
+import { Container, Relative, Flex } from '../../theme/grid';
+import { A } from '../../theme/types';
 
 class Projects extends Component {
   
   render() {
     return (
-      <div>
-        <h1>Projects page</h1>
-        <p><small>(More at <a href='https://github.com/bbulpett'>github.com/bbulpett</a>)</small></p>
-        {<Zoomy
-          imageUrl={require('../../assets/office-photo.jpg')}
-          renderThumbnail={({ showImage }) => 
-            <ImageButton onClick={showImage}>
-              <img src={require('../../assets/office-photo-small.jpg')} alt="office"/>
-            </ImageButton>
-        }
-          scale={[1.1, 1.1]}
-          imageProps={{
-            style: {
-              width: '100vw',
-              height: 'auto'
-            }
-          }}
-        />}
-      </div>
+      <Container>
+        <Relative marginBottom="50px">
+          <Index>
+            <h1>01</h1>
+          </Index>
+          <h1>Projects page</h1>
+          <p><small>(More at <A href='https://github.com/bbulpett'>github.com/bbulpett</A>)</small></p>
+        </Relative>
+        <Flex justify={'center'}>
+          <Zoomy
+            imageUrl={require('../../assets/office-photo.jpg')}
+            renderThumbnail={({ showImage }) => 
+              <ImageButton onClick={showImage}>
+                <img src={require('../../assets/office-photo-small.jpg')} alt="office"/>
+              </ImageButton>
+          }
+            scale={[1.1, 1.1]}
+            imageProps={{
+              style: {
+                width: '100vw',
+                height: 'auto'
+              }
+            }}
+          />
+        </Flex>
+      </Container>
     );
   }
 }
