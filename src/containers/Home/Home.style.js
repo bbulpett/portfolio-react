@@ -19,14 +19,15 @@ export const HeroImage = styled.div`
   justify-content: center;
 
   text-align: right;
-  font-size: 1.25em;
+  font-size: 1em;
 
   h1 {
-    margin: 100px 15px 0 0;
+    letter-spacing: -0.075em;
+    margin: 70vh 10px 0;
   }
 
   h2 {
-    margin: 0 15px 0 0;
+    margin: 0 10px;
   }
 `;
 

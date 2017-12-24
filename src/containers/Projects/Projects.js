@@ -16,7 +16,7 @@ class Projects extends Component {
           <Index>
             <h1>01</h1>
           </Index>
-          <h1>Projects page</h1>
+          <h1>My Projects</h1>
           <p><small>(More at <A href='https://github.com/bbulpett'>github.com/bbulpett</A>)</small></p>
         </Relative>
         <Flex justify={'center'}>
