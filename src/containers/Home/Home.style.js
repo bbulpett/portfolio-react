@@ -27,7 +27,7 @@ export const HeroImage = styled.div`
   }
 
   h2 {
-    margin: 0 10px;
+    margin: 0 10px 40px;
   }
 `;
 
