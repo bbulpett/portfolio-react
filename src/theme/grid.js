@@ -1,4 +1,5 @@
 import styled, {css} from 'styled-components';
+import media from '../theme/media';
 
 export const Div = styled.div`
   ${({ marginBottom }) => marginBottom && css`
@@ -8,6 +9,9 @@ export const Div = styled.div`
 
 export const Container = styled(Div)`
   padding: 30px 75px 15px 75px;
+  ${media.phone`
+    padding: 15px 30px;
+  `}
 `;
 
 export const Relative = styled(Div)`
