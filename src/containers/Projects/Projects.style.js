@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {misty_moss} from '../../theme/variables';
+import media from '../../theme/media';
 
 export const ImageButton = styled.div`
   cursor: pointer;
@@ -29,4 +30,22 @@ export const Index = styled.div`
     opacity: 0.5;
     transform: translateY(10%);
   }
+`;
+
+export const ParallaxImageWrapper = styled.div`
+  margin: auto;
+  ${media.tablet`
+    width: 
+    min-width: 316px;
+  `}
+  ${media.phone`
+    width: 90%;
+    min-width: 316px;
+  `}
+  ${media.desktop`
+    width: 55%;
+  `}
+  ${media.giant`
+    width: 55%;
+  `}
 `;

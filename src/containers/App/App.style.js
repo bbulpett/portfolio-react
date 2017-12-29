@@ -8,7 +8,7 @@ export const Background = styled.div`
   height: 80vh;
   background-image: url(${require('../../assets/background-transparency.png')});
   background-color: ${lemon_chiffon};
-  opacity: 0.25;
+  opacity: 0.15;
   background-size: 55%;
   background-repeat: no-repeat;
   background-position: center;

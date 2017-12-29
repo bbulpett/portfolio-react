@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import Zoomy from 'react-zoomy';
 import {
   ImageButton,
-  Index
+  Index,
+  ParallaxImageWrapper
 } from './Projects.style';
 import { Container, Relative, Flex } from '../../theme/grid';
 import { A } from '../../theme/types';
+import ParallaxImage from 'react-image-parallax2';
 
 class Projects extends Component {
   
@@ -17,6 +19,7 @@ class Projects extends Component {
             <h1>01</h1>
           </Index>
           <h1>My Projects</h1>
+          <h2>Project Title</h2>
           <p><small>(More at <A href="https://github.com/bbulpett" target="_blank">github.com/bbulpett</A>)</small></p>
         </Relative>
         <Flex justify={'center'}>
@@ -36,6 +39,16 @@ class Projects extends Component {
             }}
           />
         </Flex>
+        <Relative marginBottom="50px">
+          <Index>
+            <h1>02</h1>
+          </Index>
+          <h2>Project Title</h2>
+          <p><small>(Check it out at <A href="https://github.com/bbulpett" target="_blank">github.com/bbulpett</A>)</small></p>
+        </Relative>
+        <ParallaxImageWrapper>
+          <ParallaxImage reduceHeight={2/5} src={require("../../assets/raleigh-photo.jpg")} alt="raleigh" className="parallax-projects-image" />
+        </ParallaxImageWrapper>
       </Container>
     );
   }
