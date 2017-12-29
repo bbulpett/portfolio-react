@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { pale_goldenrod } from '../../theme/variables';
 
 export const Image = styled.img`
 width: 50%;
@@ -22,12 +23,12 @@ export const HeroImage = styled.div`
   font-size: 1em;
 
   h1 {
-    letter-spacing: -0.075em;
     margin: 70vh 10px 0;
   }
 
   h2 {
     margin: 0 10px 40px;
+    color: ${pale_goldenrod};
   }
 `;
 

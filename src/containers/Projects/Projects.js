@@ -14,13 +14,13 @@ class Projects extends Component {
   render() {
     return (
       <Container>
+        {/* <h1>My Projects</h1> */}
         <Relative marginBottom="50px">
           <Index>
             <h1>01</h1>
           </Index>
-          <h1>My Projects</h1>
           <h2>Project Title</h2>
-          <p><small>(More at <A href="https://github.com/bbulpett" target="_blank">github.com/bbulpett</A>)</small></p>
+          <p><small>More at <A href="https://github.com/bbulpett" target="_blank">github.com/bbulpett</A></small></p>
         </Relative>
         <Flex justify={'center'}>
           <Zoomy
@@ -44,7 +44,7 @@ class Projects extends Component {
             <h1>02</h1>
           </Index>
           <h2>Project Title</h2>
-          <p><small>(Check it out at <A href="https://github.com/bbulpett" target="_blank">github.com/bbulpett</A>)</small></p>
+          <p><small>Check it out at <A href="https://github.com/bbulpett" target="_blank">github.com/bbulpett</A></small></p>
         </Relative>
         <ParallaxImageWrapper>
           <ParallaxImage reduceHeight={2/5} src={require("../../assets/raleigh-photo.jpg")} alt="raleigh" className="parallax-projects-image" />

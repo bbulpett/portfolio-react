@@ -25,6 +25,7 @@ export const Index = styled.div`
   font-size: 3em;  
   h1 {
     margin: 0;
+    font-family: 'Gravitas One', times, serif;
     font-weight: bold;
     color: ${misty_moss};
     opacity: 0.5;
