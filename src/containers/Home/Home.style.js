@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { pale_goldenrod } from '../../theme/variables';
+import { flax } from '../../theme/variables';
 
 export const Image = styled.img`
 width: 50%;
@@ -24,11 +24,12 @@ export const HeroImage = styled.div`
 
   h1 {
     margin: 70vh 10px 0;
+    font-weight: 400;
   }
 
   h2 {
     margin: 0 10px 40px;
-    color: ${pale_goldenrod};
+    color: ${flax};
   }
 `;
 
