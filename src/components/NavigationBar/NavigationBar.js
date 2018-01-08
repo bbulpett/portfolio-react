@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { NavigationContainer } from './NavigationBar.style';
+import { NavigationContainer, NavItem } from './NavigationBar.style';
 
 class NavigationBar extends Component {
   render() {
     return (
       <NavigationContainer>
-        <div>Home</div>
-        <div>Projects</div>
-        <div>About Me</div>
+        <NavItem>Home</NavItem>
+        <NavItem>Projects</NavItem>
+        <NavItem>About Me</NavItem>
       </NavigationContainer>
     );
   }

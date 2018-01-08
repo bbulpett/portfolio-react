@@ -19,7 +19,7 @@ export const A = styled.a`
   }
 
   &:hover:after {
-    height: 45%;
+    height: 75%;
     background: linear-gradient(transparent, ${maximum_blue_purple});
   }
 `;
