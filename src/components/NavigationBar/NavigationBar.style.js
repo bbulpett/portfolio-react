@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import { Flex, Div } from '../../theme/grid';
+import { Flex } from '../../theme/grid';
 import { maximum_blue_purple, ocean_blue, misty_moss } from '../../theme/variables';
+import { Link } from 'react-router';
 
 export const NavigationContainer = styled(Flex)`
   position: fixed;
@@ -8,12 +9,13 @@ export const NavigationContainer = styled(Flex)`
   top: 1.8em;
 `;
 
-export const NavItem = styled(Div)`
+export const NavItem = styled(Link)`
   margin-right: 30px;
   font-size: 1.5em;
   cursor: pointer;
   color: ${maximum_blue_purple};
   position: relative;
+  text-decoration: none;
 
   &:hover {
     color: ${ocean_blue};
@@ -26,6 +28,7 @@ export const NavItem = styled(Div)`
       height: 100%;
       background-color: ${misty_moss};
       z-index: -1;
+      transform: scale(1.15, 1.25);
     }
   }
 `;
