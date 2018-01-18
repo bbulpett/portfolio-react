@@ -7,7 +7,7 @@ class NavigationBar extends Component {
       <NavigationContainer>
         <NavItem to="/">Home</NavItem>
         <NavItem to="/projects">Projects</NavItem>
-        <NavItem to="#">About Me</NavItem>
+        <NavItem to="/about">About</NavItem>
       </NavigationContainer>
     );
   }
