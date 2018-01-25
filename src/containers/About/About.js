@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import { Container } from '../../theme/grid';
+import { Title } from './About.style';
 
 class About extends Component {
   render() {
     return (
-      <div>
-        <h1>About</h1>
-      </div>
+      <Container>
+        <Title>About</Title>
+      </Container>
     );
   }
 }

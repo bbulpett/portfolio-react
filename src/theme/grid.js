@@ -25,10 +25,10 @@ export const Container = styled(Div)`
     padding: 15px 10px;
   `}
   ${media.desktop`
-    padding: 15px 30px;
+    padding: 15px 10%;
   `}
   ${media.giant`
-    padding: 15px 30px;
+    padding: 15px 10%;
   `}
 `;
 

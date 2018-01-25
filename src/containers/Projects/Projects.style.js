@@ -53,6 +53,6 @@ export const ParallaxImageWrapper = styled.div`
 
 export const Title = styled.h1`
   color: ${ocean_blue};
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 0;
 `;
