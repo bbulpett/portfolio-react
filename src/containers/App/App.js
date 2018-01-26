@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Background } from './App.style';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
 import ReallySmoothScroll from 'really-smooth-scroll';
-import { hashHistory } from 'react-router';
+import { hashHistory, withRouter } from 'react-router';
 
 hashHistory.listen(() => {
   window.scrollTo(0, 0);

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { flax } from '../../theme/variables';
+import { flax, ocean_blue } from '../../theme/variables';
+
 export const Background = styled.div`
   position: fixed;
   left: 10vw;
@@ -13,4 +14,10 @@ export const Background = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   z-index: -99;
+`;
+
+export const Title = styled.h1`
+margin-top: 0;
+color: ${ocean_blue};
+font-weight: 600;
 `;

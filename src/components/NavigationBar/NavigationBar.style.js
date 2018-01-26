@@ -11,7 +11,7 @@ export const NavigationContainer = styled(Flex)`
 
 export const NavItem = styled(Link)`
   margin-right: 30px;
-  font-size: 1.5em;
+  font-size: 1em;
   cursor: pointer;
   color: ${maximum_blue_purple};
   position: relative;

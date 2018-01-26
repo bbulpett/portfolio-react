@@ -15,7 +15,7 @@ class Projects extends Component {
   render() {
     return (
       <Container>
-        {<Title>Projects</Title>}
+        <Title>Projects</Title>
         <Relative marginBottom="50px" marginTop="100px">
           <Index>
             <h1>01</h1>
@@ -28,7 +28,7 @@ class Projects extends Component {
             imageUrl={require("../../assets/office-photo.jpg")}
             renderThumbnail={({ showImage }) => 
               <ImageButton onClick={showImage}>
-                <img src={require("../../assets/office-photo-small.jpg")} alt="office"/>
+                <img src={require("../../assets/generic-business-graphic.jpg")} alt="office"/>
               </ImageButton>
           }
             scale={[1.1, 1.1]}

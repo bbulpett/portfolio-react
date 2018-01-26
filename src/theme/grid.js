@@ -17,6 +17,8 @@ export const Div = styled.div`
 `;
 
 export const Container = styled(Div)`
+  margin-left: 2.5vw;
+  max-width: 77.5vw;
   padding: 30px 75px 15px 75px;
   ${media.tablet`
     padding: 15px 30px;
