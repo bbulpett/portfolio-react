@@ -6,3 +6,8 @@ export const Title = styled.h1`
   color: ${ocean_blue};
   font-weight: 600;
 `;
+
+export const TimelineWrapper = styled.div`
+  margin: 50px auto;
+  width: 50%;
+`;
