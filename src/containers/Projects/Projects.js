@@ -3,8 +3,7 @@ import Zoomy from 'react-zoomy';
 import {
   ImageButton,
   Index,
-  ParallaxImageWrapper,
-  Title
+  ParallaxImageWrapper
 } from './Projects.style';
 import { Container, Relative, Flex } from '../../theme/grid';
 import { A } from '../../theme/types';
@@ -15,7 +14,6 @@ class Projects extends Component {
   render() {
     return (
       <Container>
-        <Title>Projects</Title>
         <Relative marginBottom="50px" marginTop="100px">
           <Index>
             <h1>01</h1>

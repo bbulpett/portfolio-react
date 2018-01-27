@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {misty_moss, ocean_blue} from '../../theme/variables';
+import {misty_moss} from '../../theme/variables';
 import media from '../../theme/media';
 
 export const ImageButton = styled.div`
@@ -49,10 +49,4 @@ export const ParallaxImageWrapper = styled.div`
   ${media.giant`
     width: 55%;
   `}
-`;
-
-export const Title = styled.h1`
-  color: ${ocean_blue};
-  font-weight: 600;
-  margin-top: 0;
 `;
