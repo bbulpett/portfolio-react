@@ -6,6 +6,9 @@ export const ImageButton = styled.div`
   cursor: pointer;
   overflow: hidden;
   display: inline-block;
+  padding: 3px;
+  background: transparent;
+  border: 3px dotted ${misty_moss};
 
   & > img {
     transition: transform .3s;
@@ -34,6 +37,9 @@ export const Index = styled.div`
 `;
 
 export const ParallaxImageWrapper = styled.div`
+  padding: 3px;
+  background: transparent;
+  border: 3px dotted ${misty_moss};
   margin: auto;
   ${media.tablet`
     width: 

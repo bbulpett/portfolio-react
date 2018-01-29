@@ -13,6 +13,7 @@ export const HeroImage = styled.div`
   background-size: cover;
   background-position: center;
   margin-bottom: 10vh;
+  margin-top: 50px;
 
   display: flex;
   flex-direction: column;
