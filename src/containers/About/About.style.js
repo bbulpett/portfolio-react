@@ -13,6 +13,7 @@ export const TimelineWrapper = styled.div`
 export const Blurb = styled.div`
   font-size: 16pt;
   margin: 2.5%;
+  max-width: 92.5%;
 `;
 
 export const H2 = styled.h2`

@@ -18,20 +18,19 @@ export const Div = styled.div`
 
 // TODO: Container component breaks width when viewport gets real wide. Fix that.
 export const Container = styled(Div)`
-  margin-left: 2.5vw;
-  max-width: 77.5vw;
-  padding: 30px 75px 15px 75px;
+  margin-left: 5%;
+  padding: 2em 75px 30px 75px;
   ${media.tablet`
-    padding: 30px 30px;
+    padding: 2em 0 30px 15px;
   `}
   ${media.phone`
-    padding: 30px 10px;
+    padding: 2em 0 30px 10px;
   `}
   ${media.desktop`
-    padding: 30px 7.5%;
+    padding: 2em 5vw 30px 7.5vw;
   `}
   ${media.giant`
-    padding: 30px 10%;
+    padding: 2em 5vw 30px 7.5vw;
   `}
 `;
 
