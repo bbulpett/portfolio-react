@@ -17,7 +17,7 @@ export const Background = styled.div`
 `;
 
 export const Title = styled.h1`
-margin-top: 0;
-color: ${ocean_blue};
-font-weight: 600;
+  margin-top: 0;
+  color: ${ocean_blue};
+  font-weight: 600;
 `;
