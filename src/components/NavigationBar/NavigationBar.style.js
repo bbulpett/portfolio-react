@@ -13,23 +13,26 @@ export const NavigationContainer = styled(Flex)`
   z-index: 1038;
 `;
 
+export const NavNarrow = styled.div`
+  position: fixed
+  width: 100vw;
+  top: 0;
+  left: 0;
+  border: 2px solid #FAA;
+  background-color: #FEE;
+  display: none;
+  ${media.phone`display: block;`}
+  ${media.tablet`display: block;`}
+`;
+
 export const NavWide = styled.div`
   position: absolute;
   right: 10%;
   top: 0.5em;
   border: 2px solid #AAF;
+  display: block;
   ${media.phone`display: none;`}
   ${media.tablet`display: none;`}
-  ${media.desktop`display: block;`}
-  ${media.giant`display: block;`}
-`;
-
-export const NavNarrow = styled.div`
-  border: 2px solid #FAA;
-  ${media.phone`display: block;`}
-  ${media.tablet`display: block;`}
-  ${media.desktop`display: none;`}
-  ${media.giant`display: none;`}
 `;
 
 export const NavItem = styled(Link)`

@@ -21,11 +21,6 @@ class NavigationBar extends Component {
           </div>
         </NavNarrow>
       </NavigationContainer>
-      // <NavigationContainer>
-      //   <NavItem to="/">Home</NavItem>
-      //   <NavItem to="/projects">Projects</NavItem>
-      //   <NavItem to="/about">About</NavItem>
-      // </NavigationContainer>
     );
   }
 }
