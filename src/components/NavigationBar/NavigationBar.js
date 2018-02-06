@@ -1,24 +1,22 @@
 import React, { Component } from 'react';
-import { NavigationContainer, NavWide, NavNarrow, NavItem } from './NavigationBar.style';
+import { NavigationContainer, NavWide, NavNarrow, NavItemWide, NavItemNarrow } from './NavigationBar.style';
 
 class NavigationBar extends Component {
   render() {
     return (
       <NavigationContainer>
         <NavWide>
-            <div className="wideDiv">
-            <NavItem to="/">Home</NavItem>
-            <NavItem to="/projects">Projects</NavItem>
-            <NavItem to="/about">About</NavItem>
-            </div>
+          <NavItemWide to="/">Home</NavItemWide>
+          <NavItemWide to="/projects">Projects</NavItemWide>
+          <NavItemWide to="/about">About</NavItemWide>
         </NavWide>
         <NavNarrow>
-          <i className="fa fa-bars fa-2x"></i>
-          <div className="narrowLinks">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-          </div>
+        <i class="zmdi zmdi-flower-alt zmdi-hc-2x"></i>
+          <ul>
+            <NavItemNarrow><a href="#">Link 1</a></NavItemNarrow>
+            <NavItemNarrow><a href="#">Link 2</a></NavItemNarrow>
+            <NavItemNarrow><a href="#">Link 3</a></NavItemNarrow>
+          </ul>
         </NavNarrow>
       </NavigationContainer>
     );

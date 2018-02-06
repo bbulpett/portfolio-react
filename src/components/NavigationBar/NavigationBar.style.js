@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Flex } from '../../theme/grid';
-import { maximum_blue_purple, ocean_blue, misty_moss } from '../../theme/variables';
+import { maximum_blue_purple, ocean_blue, misty_moss, flax } from '../../theme/variables';
 import { Link } from 'react-router';
 import media from '../../theme/media';
 
@@ -14,28 +14,60 @@ export const NavigationContainer = styled(Flex)`
 `;
 
 export const NavNarrow = styled.div`
-  position: fixed
-  width: 100vw;
-  top: 0;
-  left: 0;
-  border: 2px solid #FAA;
-  background-color: #FEE;
+  width: 100%;
+  background-color: ${flax};
   display: none;
   ${media.phone`display: block;`}
   ${media.tablet`display: block;`}
+
+  i {
+    width: 1em;
+    font-size: 1em;
+    color: #FFF;
+    z-index: 1039;
+  }
+`;
+
+export const NavItemNarrow = styled.li`
+  width: 100%;
+  background-color: ${flax};
+  border-top: #777;
+  color: ${maximum_blue_purple};
+  position: relative;
+  display: none;  
+
+  &:hover {
+    color: ${ocean_blue};
+    &:after {
+      // width: 100%;
+      // height: 100%;
+      background-color: ${misty_moss};
+      // z-index: -1;
+      // transform: scale(1.15, 1.25);
+    }
+  }
+    list-style-type: none;
+
+    a {
+      color: #FFF;
+      text-decoration: none;
+      display: block;
+      float: left;
+      clear: left;
+    }
+  }
 `;
 
 export const NavWide = styled.div`
   position: absolute;
   right: 10%;
   top: 0.5em;
-  border: 2px solid #AAF;
   display: block;
   ${media.phone`display: none;`}
   ${media.tablet`display: none;`}
 `;
 
-export const NavItem = styled(Link)`
+export const NavItemWide = styled(Link)`
   margin-right: 30px;
   font-size: 1em;
   cursor: pointer;
