@@ -21,10 +21,11 @@ export const NavNarrow = styled.div`
   ${media.tablet`display: block;`}
 
   i {
-    width: 1em;
-    font-size: 1em;
     color: #FFF;
+    font-size: 50px;
     z-index: 1039;
+    line-height: 60px;
+    margin-left: 20px;
   }
 `;
 

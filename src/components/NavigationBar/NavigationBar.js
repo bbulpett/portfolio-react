@@ -11,7 +11,7 @@ class NavigationBar extends Component {
           <NavItemWide to="/about">About</NavItemWide>
         </NavWide>
         <NavNarrow>
-        <i class="zmdi zmdi-flower-alt zmdi-hc-2x"></i>
+        <i class="zmdi zmdi-menu"></i>
           <ul>
             <NavItemNarrow><a href="#">Link 1</a></NavItemNarrow>
             <NavItemNarrow><a href="#">Link 2</a></NavItemNarrow>
