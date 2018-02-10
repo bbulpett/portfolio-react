@@ -8,7 +8,9 @@ export const ImageButton = styled.div`
   display: inline-block;
   padding: 3px;
   background: transparent;
+  margin-left: 5px;
   border: 3px dotted ${misty_moss};
+  max-width: 75vw;
 
   & > img {
     transition: transform .3s;

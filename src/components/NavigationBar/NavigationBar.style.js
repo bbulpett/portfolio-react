@@ -7,10 +7,13 @@ import media from '../../theme/media';
 export const NavigationContainer = styled(Flex)`
   position: fixed;
   top: 0;
-  width: 100%;
+  right: 4.25vw;
+  width: 50%;
   height: 60px;
   background-color: #FFF;
   z-index: 1038;
+  ${media.phone`width: 100%;right: 0;`}
+  ${media.tablet`width: 100%;right: 0;`}
 `;
 
 export const NavNarrow = styled.div`
@@ -26,6 +29,7 @@ export const NavNarrow = styled.div`
     z-index: 1039;
     line-height: 60px;
     margin-left: 20px;
+    cursor: pointer;
   }
 `;
 
