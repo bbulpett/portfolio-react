@@ -5,6 +5,17 @@ import {registration_black, ocean_blue} from '../theme/variables';
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Gravitas+One');
 
+  // Global reset for wrappers
+  html, body, body div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+
   body {
     background-color: #FFF;
     font-family: "Courier New", Courier, monospace;
@@ -20,4 +31,5 @@ injectGlobal`
   h2, h3 {
     color: ${ocean_blue};
   }
+
 `

@@ -16,7 +16,6 @@ export const Div = styled.div`
   `}
 `;
 
-// TODO: Container component breaks width when viewport gets real wide. Fix that.
 export const Container = styled(Div)`
   margin-left: 5%;
   padding: 2em 10vw 30px 6.5vw;
@@ -52,4 +51,5 @@ export const Flex = styled(Div)`
   ${({ align }) => align && css`
     align-content: ${align};
   `}
+
 `;
