@@ -24,10 +24,12 @@ class NavigationBar extends Component {
 
   menuToggle() {
     let menu = document.querySelector('.navList');
-    if (menu.style.display === 'block') {
-      menu.style.display = 'none';
+    if (menu.style.visibility === 'visible') {
+      menu.style.visibility = 'hidden';
+      menu.style.opacity = '0';
     } else {
-      menu.style.display = 'block'
+      menu.style.visibility = 'visible';
+      menu.style.opacity = '1';
     }
   }
 

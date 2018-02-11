@@ -34,9 +34,11 @@ export const NavNarrow = styled.div`
     margin: 0;
     padding: 0;
     z-index: 1041;
-    display: none;
-    background-color: ${flax};
-    height: 12rem;
+    visibility: hidden;
+    opacity: 0;
+
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
   }
 `;
 
