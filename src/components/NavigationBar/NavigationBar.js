@@ -10,20 +10,20 @@ class NavigationBar extends Component {
           <NavItemWide to="/projects">Projects</NavItemWide>
           <NavItemWide to="/about">About</NavItemWide>
         </NavWide>
-        <NavNarrow className="navNarrow">
+        <NavNarrow>
         <i className="zmdi zmdi-menu" onClick={this.menuToggle}></i>
-          <ul>
-            <NavItemNarrow><a href="/" onClick={this.menuToggle}>Link 1</a></NavItemNarrow>
-            <NavItemNarrow><a href="/projects" onClick={this.menuToggle}>Link 2</a></NavItemNarrow>
-            <NavItemNarrow><a href="/about" onClick={this.menuToggle}>Link 3</a></NavItemNarrow>
-          </ul>
+        <div className="navList">
+          <NavItemNarrow to="/" onClick={this.menuToggle}>Home</NavItemNarrow>
+          <NavItemNarrow to="/projects" onClick={this.menuToggle}>Projects</NavItemNarrow>
+          <NavItemNarrow to="/about" onClick={this.menuToggle}>About</NavItemNarrow>
+        </div>
         </NavNarrow>
       </NavigationContainer>
     );
   }
 
   menuToggle() {
-    let menu = document.querySelector('.navNarrow');
+    let menu = document.querySelector('.navList');
     console.log(menu.style.display);
     if (menu.style.display === 'block') {
       menu.style.display = 'none';

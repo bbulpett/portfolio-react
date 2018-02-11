@@ -25,41 +25,38 @@ export const NavNarrow = styled.div`
 
   i {
     color: #FFF;
-    font-size: 50px;
+    font-size: 4rem;
     z-index: 1039;
-    line-height: 60px;
+    line-height: 3.5rem;
     margin-left: 20px;
     cursor: pointer;
   }
+
+  .navList {
+    margin: 0;
+    padding: 0;
+    z-index: 1041;
+    display: none;
+    background-color: ${flax};
+    height: 12rem;
+  }
 `;
 
-export const NavItemNarrow = styled.li`
+export const NavItemNarrow = styled(Link)`
   width: 100%;
+  height: 4rem;
   background-color: ${flax};
-  border-top: #777;
-  color: ${maximum_blue_purple};
+  border-top: 2px solid #FFF;
   position: relative;
-  display: none;  
+  top: 0;
+  padding: 0 20px;
+  line-height: 4rem;
+  color: #FFF;
+  display: block;
+  text-decoration: none;
 
   &:hover {
-    color: ${ocean_blue};
-    &:after {
-      // width: 100%;
-      // height: 100%;
-      background-color: ${misty_moss};
-      // z-index: -1;
-      // transform: scale(1.15, 1.25);
-    }
-  }
-    list-style-type: none;
-
-    a {
-      color: #FFF;
-      text-decoration: none;
-      display: block;
-      float: left;
-      clear: left;
-    }
+    background-color: ${misty_moss};
   }
 `;
 
