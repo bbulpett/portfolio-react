@@ -5,6 +5,7 @@ import media from '../../theme/media';
 export const TimelineWrapper = styled.div`
   margin: 30px auto;
   width: 70vw;
+  max-width: 640px;
   height: 400px;
   padding: 3px;
   background: transparent;

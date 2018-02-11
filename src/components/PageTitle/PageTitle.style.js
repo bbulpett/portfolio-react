@@ -10,6 +10,7 @@ export const Title = styled.h1`
   color: ${ocean_blue};
   font-weight: 600;
   background-color: #FFF;
+  z-index: 1041;
   
   ${media.phone && media.tablet`
     writing-mode:tb-rl;
@@ -21,6 +22,7 @@ export const Title = styled.h1`
     left: -30px;
     transform: rotate(-180deg);
     transition: transform 0.35s ease-in, left 0.35s ease-in, top 0.35s linear;
+    z-index: 1039;
   `}
 
 `;

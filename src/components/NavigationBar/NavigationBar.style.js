@@ -8,25 +8,23 @@ export const NavigationContainer = styled(Flex)`
   position: fixed;
   top: 0;
   right: 4.25vw;
-  width: 50%;
+  width: 100%;
   height: 60px;
   background-color: #FFF;
-  z-index: 1038;
-  ${media.phone`width: 100%;right: 0;`}
-  ${media.tablet`width: 100%;right: 0;`}
+  z-index: 1040;
+  ${media.phone && media.tablet`width: 100%;right: 0;`}
 `;
 
 export const NavNarrow = styled.div`
   width: 100%;
   background-color: ${flax};
   display: none;
-  ${media.phone`display: block;`}
-  ${media.tablet`display: block;`}
+  ${media.phone && media.tablet`display: block;`}
 
   i {
     color: #FFF;
     font-size: 4rem;
-    z-index: 1039;
+    z-index: 1041;
     line-height: 3.5rem;
     margin-left: 20px;
     cursor: pointer;
