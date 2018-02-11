@@ -24,11 +24,10 @@ class NavigationBar extends Component {
 
   menuToggle() {
     let menu = document.querySelector('.navList');
-    console.log(menu.style.display);
     if (menu.style.display === 'block') {
       menu.style.display = 'none';
     } else {
-      menu.style.display = 'block';
+      menu.style.display = 'block'
     }
   }
 
