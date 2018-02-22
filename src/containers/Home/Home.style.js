@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { flax } from '../../theme/variables';
+import media from '../../theme/media';
 
 export const Image = styled.img`
 width: 50%;
@@ -26,10 +27,12 @@ export const HeroImage = styled.div`
   h1 {
     margin: 70vh 10px 0;
     font-weight: 400;
+
+    ${media.phone && media.tablet`margin: 50vh 5px 0;width: 8em;`}
   }
 
   h2 {
-    margin: 0 10px 40px;
+    margin: 0 5px 40px;
     color: ${flax};
   }
 `;

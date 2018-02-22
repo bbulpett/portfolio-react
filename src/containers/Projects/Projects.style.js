@@ -29,6 +29,7 @@ export const Index = styled.div`
   z-index: -1;  
   font-size: 3em;  
   h1 {
+    font-size: 1em;
     margin: 0;
     font-family: 'Gravitas One', times, serif;
     font-weight: bold;
@@ -44,7 +45,7 @@ export const ParallaxImageWrapper = styled.div`
   border: 3px dotted ${misty_moss};
   margin: auto;
   ${media.tablet`
-    width: 
+    width: 80%
     min-width: 316px;
   `}
   ${media.phone`
@@ -58,3 +59,33 @@ export const ParallaxImageWrapper = styled.div`
     width: 55%;
   `}
 `;
+
+export const ImgContainer = styled.div`
+  width: 100%;
+  margin: 0 0 75px;
+`
+
+export const ScreenshotThumb = styled.img`
+  position: relative;
+  padding: 3px;
+  background: transparent;
+  border: 3px dotted ${misty_moss};
+  max-width: 640px;
+  ${media.tablet`
+    width: 80%
+    min-width: 316px;
+  `}
+  ${media.phone`
+    width: 100%;
+    min-width: 316px;
+    margin: 0 auto;
+  `}
+  ${media.desktop`
+    width: 55%;
+    min-width: 480px;
+  `}
+  ${media.giant`
+    width: 55%;
+    min-width: 316px;
+  `}
+`
