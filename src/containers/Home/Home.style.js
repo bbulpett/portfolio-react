@@ -28,7 +28,7 @@ export const HeroImage = styled.div`
     margin: 70vh 10px 0;
     font-weight: 400;
     ${media.tablet`margin: 50vh 5px 0;width: 8em;`}
-    ${media.phone`margin: 55vh 5px 0;width: 95%; font-size: 28pt;`}
+    ${media.phone`margin: 35vh 5px 0;width: 95%; font-size: 28pt;`}
   }
 
   h2 {
