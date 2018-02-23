@@ -21,6 +21,7 @@ injectGlobal`
     font-family: "Courier New", Courier, monospace;
     font-size: 18pt;
     color: ${registration_black};
+    overflow-x: hidden;
   }
 
   h1, h2, h3 {

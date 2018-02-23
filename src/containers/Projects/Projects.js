@@ -19,7 +19,7 @@ class Projects extends Component {
 
         <Relative marginBottom="50px" marginTop="100px">
           <Index>
-            <h1>MWW</h1>
+            <h1 headingLength={3}>MWW</h1>
           </Index>
           <h2>MWW On Demand, Inc.</h2>
           <p><small>API documentation at <A href="http://mwwondemand.github.io/" target="_blank">http://mwwondemand.github.io/</A></small></p>

@@ -29,13 +29,19 @@ export const Index = styled.div`
   z-index: -1;  
   font-size: 3em;  
   h1 {
-    font-size: 1em;
+    font-size: 100%;
     margin: 0;
     font-family: 'Gravitas One', times, serif;
     font-weight: bold;
     color: ${misty_moss};
     opacity: 0.5;
-    transform: translateY(10%);
+
+    // width: ${props => props.headingLength};
+
+    // (vw * 0.8) ()
+
+    transform:scale(2,1);
+    -webkit-transform:scale(2,1);
   }
 `;
 
@@ -62,7 +68,7 @@ export const ParallaxImageWrapper = styled.div`
 
 export const ImgContainer = styled.div`
   width: 100%;
-  margin: 0 0 75px;
+  margin: 0 0 100px;
 `
 
 export const ScreenshotThumb = styled.img`
@@ -72,7 +78,7 @@ export const ScreenshotThumb = styled.img`
   border: 3px dotted ${misty_moss};
   max-width: 640px;
   ${media.tablet`
-    width: 80%
+    width: 100%
     min-width: 316px;
   `}
   ${media.phone`

@@ -27,13 +27,14 @@ export const HeroImage = styled.div`
   h1 {
     margin: 70vh 10px 0;
     font-weight: 400;
-
-    ${media.phone && media.tablet`margin: 50vh 5px 0;width: 8em;`}
+    ${media.tablet`margin: 50vh 5px 0;width: 8em;`}
+    ${media.phone`margin: 55vh 5px 0;width: 95%; font-size: 28pt;`}
   }
 
   h2 {
     margin: 0 5px 40px;
     color: ${flax};
+    ${media.phone`margin: 10px 10px;font-size: 22pt;`}
   }
 `;
 
@@ -46,7 +47,7 @@ export const RevealP = styled.p`
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #FBF9F0;
 
     transform-origin: left;
     transform: rotateY(90deg);
