@@ -23,26 +23,22 @@ export const ImageButton = styled.div`
 `;
 
 export const Index = styled.div`
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
   z-index: -1;  
-  font-size: 3em;  
+  font-size: 2.5em;  
   h1 {
-    font-size: 100%;
-    margin: 0;
-    font-family: 'Gravitas One', times, serif;
-    font-weight: bold;
-    color: ${misty_moss};
+    font: bold 100% 'Gravitas One', times, serif;
+    color: ${misty_moss};    
     opacity: 0.5;
-
-    // width: ${props => props.headingLength};
-
-    // (vw * 0.8) ()
-
-    transform:scale(2,1);
-    -webkit-transform:scale(2,1);
+    margin: 0;
   }
+`;
+
+export const Subtitle = styled.h2`
+  margin: 0;
+  text-indent: 5px;
 `;
 
 export const ParallaxImageWrapper = styled.div`

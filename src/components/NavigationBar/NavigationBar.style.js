@@ -37,8 +37,8 @@ export const NavNarrow = styled.div`
     visibility: hidden;
     opacity: 0;
 
-    -webkit-transition: opacity 600ms, visibility 600ms;
-    transition: opacity 600ms, visibility 600ms;
+    -webkit-transition: opacity 450ms, visibility 450ms;
+    transition: opacity 450ms, visibility 450ms;
   }
 `;
 

@@ -5,7 +5,8 @@ import {
   Index,
   ParallaxImageWrapper,
   ScreenshotThumb,
-  ImgContainer
+  ImgContainer,
+  Subtitle
 } from './Projects.style';
 import { Container, Relative, Flex } from '../../theme/grid';
 import { A } from '../../theme/types';
@@ -17,26 +18,26 @@ class Projects extends Component {
     return (
       <Container>
 
-        <Relative marginBottom="50px" marginTop="100px">
+        <Relative marginBottom="50px" marginTop="50px">
           <Index>
-            <h1 headingLength={3}>MWW</h1>
+            <h1>MWW</h1>
           </Index>
-          <h2>MWW On Demand, Inc.</h2>
+          <Subtitle>MWW On Demand, Inc.</Subtitle>
           <p><small>API documentation at <A href="http://mwwondemand.github.io/" target="_blank">http://mwwondemand.github.io/</A></small></p>
         </Relative>
         <ImgContainer>
-          <ScreenshotThumb reduceHeight={2/5} src={require("../../assets/mww-home.png")} alt="MWW OnDemand Manufacturing Application home page" className="parallax-projects-image" />
+          <ScreenshotThumb src={require("../../assets/mww-home.png")} alt="MWW OnDemand Manufacturing Application home page" />
         </ImgContainer>
 
         <Relative marginBottom="50px">
           <Index>
             <h1>Program Services</h1>
           </Index>
-          <h2>ProgramServices.org</h2>
+          <Subtitle>ProgramServices.org</Subtitle>
           <p><small>Check it out at <A href="https://programservices.org/" target="_blank">https://programservices.org/</A></small></p>
         </Relative>
         <ImgContainer>
-          <ScreenshotThumb src={require("../../assets/programservices-home.png")} alt="Program Services home page" className="parallax-projects-image" />
+          <ScreenshotThumb src={require("../../assets/programservices-home.png")} alt="Program Services home page" />
         </ImgContainer>
 
       </Container>

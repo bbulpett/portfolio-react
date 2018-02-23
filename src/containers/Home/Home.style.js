@@ -27,13 +27,14 @@ export const HeroImage = styled.div`
   h1 {
     margin: 70vh 10px 0;
     font-weight: 400;
-    ${media.tablet`margin: 50vh 5px 0;width: 8em;`}
-    ${media.phone`margin: 35vh 5px 0;width: 95%; font-size: 28pt;`}
+    ${media.tablet`margin: 50vh 5% 0 40%;width: 55%;`}
+    ${media.phone`margin: 35vh 5vw 0;width: 90%; font-size: 28pt;`}
   }
 
   h2 {
-    margin: 0 5px 40px;
+    margin: 0 10px 40px;
     color: ${flax};
+    ${media.tablet`margin: 10px 5%;`}
     ${media.phone`margin: 10px 10px;font-size: 22pt;`}
   }
 `;
