@@ -48,7 +48,7 @@ export const ParallaxImageWrapper = styled.div`
   margin: auto;
   ${media.tablet`
     width: 80%
-    min-width: 316px;
+    min-width: 328px;
   `}
   ${media.phone`
     width: 90%;
@@ -65,6 +65,11 @@ export const ParallaxImageWrapper = styled.div`
 export const ImgContainer = styled.div`
   width: 100%;
   margin: 0 0 100px;
+
+  & > p {
+    margin-top: 0.25em;
+    line-height: 0.75em;
+  }
 `
 
 export const ScreenshotThumb = styled.img`
@@ -73,21 +78,24 @@ export const ScreenshotThumb = styled.img`
   background: transparent;
   border: 3px dotted ${misty_moss};
   max-width: 640px;
-  ${media.tablet`
-    width: 100%
-    min-width: 316px;
-  `}
-  ${media.phone`
-    width: 100%;
-    min-width: 316px;
-    margin: 0 auto;
+  ${media.giant`
+    width: 55%;
+    min-width: 480px;
+    max-height: 40vh;
   `}
   ${media.desktop`
     width: 55%;
     min-width: 480px;
+    max-height: 40vh;
   `}
-  ${media.giant`
-    width: 55%;
+  ${media.tablet`
+    width: 75vw;
     min-width: 316px;
+  `}
+  ${media.phone`
+  border: 3px dotted #F00;
+    width: 100%;
+    min-width: 316px;
+    margin: 0 auto;
   `}
 `

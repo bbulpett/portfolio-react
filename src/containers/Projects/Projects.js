@@ -23,10 +23,10 @@ class Projects extends Component {
             <h1>MWW</h1>
           </Index>
           <Subtitle>MWW On Demand, Inc.</Subtitle>
-          <p><small>API documentation at <A href="http://mwwondemand.github.io/" target="_blank">http://mwwondemand.github.io/</A></small></p>
         </Relative>
         <ImgContainer>
           <ScreenshotThumb src={require("../../assets/mww-home.png")} alt="MWW OnDemand Manufacturing Application home page" />
+          <p><small>API documentation at <A href="http://mwwondemand.github.io/" target="_blank">http://mwwondemand.github.io/</A></small></p>
         </ImgContainer>
 
         <Relative marginBottom="50px">
@@ -34,10 +34,11 @@ class Projects extends Component {
             <h1>Program Services</h1>
           </Index>
           <Subtitle>ProgramServices.org</Subtitle>
-          <p><small>Check it out at <A href="https://programservices.org/" target="_blank">https://programservices.org/</A></small></p>
+          
         </Relative>
         <ImgContainer>
           <ScreenshotThumb src={require("../../assets/programservices-home.png")} alt="Program Services home page" />
+          <p><small>Check it out at <A href="https://programservices.org/" target="_blank">https://programservices.org/</A></small></p>
         </ImgContainer>
 
       </Container>
