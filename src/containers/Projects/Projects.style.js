@@ -27,18 +27,19 @@ export const Index = styled.div`
   left: 0;
   bottom: 0;
   z-index: -1;  
-  font-size: 2.5em;  
-  h1 {
-    font: bold 100% 'Gravitas One', times, serif;
-    color: ${misty_moss};    
+  height: calc(10vw);
+  svg {
+    font: bold 125% 'Gravitas One', times, serif;
     opacity: 0.5;
-    margin: 0;
+    fill: ${misty_moss};
   }
 `;
 
 export const Subtitle = styled.h2`
-  margin: 0;
+  font-size: 100%;
+  margin: 10px 5px;
   text-indent: 5px;
+  line-height: 1em;
 `;
 
 export const ParallaxImageWrapper = styled.div`
@@ -78,22 +79,22 @@ export const ScreenshotThumb = styled.img`
   background: transparent;
   border: 3px dotted ${misty_moss};
   max-width: 640px;
+  max-height: 40vh;
   ${media.giant`
     width: 55%;
     min-width: 480px;
-    max-height: 40vh;
+    
   `}
   ${media.desktop`
     width: 55%;
     min-width: 480px;
-    max-height: 40vh;
+    max-height: 45vh;
   `}
   ${media.tablet`
     width: 75vw;
     min-width: 316px;
   `}
   ${media.phone`
-  border: 3px dotted #F00;
     width: 100%;
     min-width: 316px;
     margin: 0 auto;

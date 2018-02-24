@@ -18,9 +18,14 @@ class Projects extends Component {
     return (
       <Container>
 
-        <Relative marginBottom="50px" marginTop="50px">
+        <Relative marginBottom="10px" marginTop="50px">
           <Index>
-            <h1>MWW</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox='0 0 300 24'>
+              <text textLength='290' lengthAdjust="spacingAndGlyphs" x='0' y="100%"
+              font-size-adjust="0.8" >
+                  MWW
+              </text>
+            </svg>
           </Index>
           <Subtitle>MWW On Demand, Inc.</Subtitle>
         </Relative>
@@ -29,12 +34,15 @@ class Projects extends Component {
           <p><small>API documentation at <A href="http://mwwondemand.github.io/" target="_blank">http://mwwondemand.github.io/</A></small></p>
         </ImgContainer>
 
-        <Relative marginBottom="50px">
-          <Index>
-            <h1>Program Services</h1>
+        <Relative marginBottom="10px">
+        <Index>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox='0 0 300 24'>
+              <text textLength='290' lengthAdjust="spacingAndGlyphs" x='5' y="100%" >
+                  Program Services
+              </text>
+            </svg>
           </Index>
           <Subtitle>ProgramServices.org</Subtitle>
-          
         </Relative>
         <ImgContainer>
           <ScreenshotThumb src={require("../../assets/programservices-home.png")} alt="Program Services home page" />
