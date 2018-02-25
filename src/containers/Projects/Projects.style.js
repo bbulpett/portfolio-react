@@ -29,7 +29,7 @@ export const Index = styled.div`
   z-index: -1;  
   height: calc(10vw);
   svg {
-    font: bold 125% 'Gravitas One', times, serif;
+    font: bold 125% Block, times, serif;
     opacity: 0.5;
     fill: ${misty_moss};
   }
