@@ -6,7 +6,7 @@ import blockWOFF2 from '../assets/fonts/block/block.ttf';
 
 /* eslint-disable */
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Gravitas+One');
+  // @import url('https://fonts.googleapis.com/css?family=Gravitas+One');
   @font-face {
     font-family: 'Block';
     src:  url(${blockWOFF2}) format('woff2'),
@@ -41,5 +41,5 @@ injectGlobal`
   h2, h3 {
     color: ${ocean_blue};
   }
-  
+
 `

@@ -29,7 +29,7 @@ export const Index = styled.div`
   z-index: -1;  
   height: calc(10vw);
   svg {
-    font: bold 125% Block, times, serif;
+    font: bold 150% Block, times, serif;
     opacity: 0.5;
     fill: ${misty_moss};
   }
@@ -71,6 +71,13 @@ export const ImgContainer = styled.div`
     margin-top: 0.25em;
     line-height: 0.75em;
   }
+
+  ${media.tablet`
+    width: 75vw;
+  `}
+  ${media.phone`
+    width: 100%;
+  `}
 `
 
 export const ScreenshotThumb = styled.img`
@@ -83,20 +90,21 @@ export const ScreenshotThumb = styled.img`
   ${media.giant`
     width: 55%;
     min-width: 480px;
-    
   `}
   ${media.desktop`
     width: 55%;
     min-width: 480px;
     max-height: 45vh;
+    border: 3px dotted #0F0;
   `}
   ${media.tablet`
     width: 75vw;
     min-width: 316px;
+    border: 3px dotted #00F;
   `}
   ${media.phone`
-    width: 100%;
-    min-width: 316px;
-    margin: 0 auto;
+    width: 75vw;
+    max-width: 300px;
+    border: 3px dotted #F00;
   `}
 `
